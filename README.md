@@ -1,1 +1,1 @@
-Compiled light SSH tunnel tools for X64 Linux
+Compiled light tunnel for Linux
