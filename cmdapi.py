@@ -3,12 +3,13 @@ import subprocess
 import sys
 
 # Auto-install Flask if not present
-try:
-    from flask import Flask, request, jsonify, render_template_string
-except ImportError:
-    print("Flask not found. Installing...")
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "flask"])
-    from flask import Flask, request, jsonify, render_template_string
+#try:
+    #from flask import Flask, request, jsonify, render_template_string
+#except ImportError:
+    #print("Flask not found. Installing...")
+    #subprocess.check_call([sys.executable, "-m", "pip", "install", "flask"])
+
+from flask import Flask, request, jsonify, render_template_string
 
 app = Flask(__name__)
 
