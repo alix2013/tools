@@ -15,7 +15,7 @@ if st.button("Run"):
     else:
         if background:
             log_file = "output.log"
-            final_cmd = f"nohup {command} > {log_file} 2>&1 &"
+            final_cmd = f"nohup {command} >> {log_file} 2>&1 &"
             try:
                 subprocess.Popen(final_cmd, shell=True)
                 st.success(f"✅ Background job started. Output will go to `{log_file}`.")
