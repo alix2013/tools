@@ -5,11 +5,11 @@ import shlex
 st.set_page_config(page_title="Command Runner", layout="centered")
 
 st.title("🖥️ Hello StreamApp")
-command = st.text_input("Input", placeholder="")
-timeout = st.slider("Timeout (seconds, only applies to foreground mode)", 1, 60, 10)
-background = st.checkbox("Background ")
+command = st.text_input("Test Input", placeholder="")
+timeout = st.slider("Test Timeout", 1, 60, 10)
+background = st.checkbox("Test checkbox Background ")
 
-if st.button("Run"):
+if st.button("OK"):
     if not command.strip():
         st.warning("Please enter a command.")
     else:
