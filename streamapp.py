@@ -4,10 +4,10 @@ import shlex
 
 st.set_page_config(page_title="Command Runner", layout="centered")
 
-st.title("🖥️ Shell Command Runner with Background Support")
-command = st.text_input("Shell command", placeholder="e.g. ls -l")
+st.title("🖥️ Hello StreamApp")
+command = st.text_input("Input", placeholder="")
 timeout = st.slider("Timeout (seconds, only applies to foreground mode)", 1, 60, 10)
-background = st.checkbox("Run in background (with nohup > output.log &)")
+background = st.checkbox("Background ")
 
 if st.button("Run"):
     if not command.strip():
